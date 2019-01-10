@@ -1,0 +1,16 @@
+{
+  "name": "uniapp-qa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "read-yaml": "^1.1.0",
+    "textfile": "^1.2.0"
+  }
+}

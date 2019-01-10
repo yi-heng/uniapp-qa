@@ -1,0 +1,174 @@
+# questions：示例问题（非必选）
+# keys：匹配关键字（正则）
+# answer：参考答案
+- 
+  questions:
+    - 请求跨域怎么办
+  keys:
+    - 跨域
+  answer: 跨域问题参考：http://ask.dcloud.net.cn/article/35267
+-
+  keys:
+    - 公众号
+  answer: UNI-APP 开发微信公众号（H5）JS-SDK 的使用方式：http://ask.dcloud.net.cn/article/35380
+-
+  keys:
+    - "[Hh]5(?!\\+).*[编译打包运行调试发布]"
+  answer: uni-app的H5版使用注意事项：http://ask.dcloud.net.cn/article/35232
+-
+  keys:
+    - 微信支付.*错*败*
+  answer: 安卓微信支付-100 （-1）错误排除指导：http://ask.dcloud.net.cn/article/34997
+-
+  questions:
+    - 遮罩后面的页面为何还能被拖动？
+  keys:
+    - "[阻禁]止.*滚动"
+    - (弹框|蒙层|遮罩).*能.*动
+  answer: 如果想阻止弹出层的滚动，可以使用 catchtouchmove 属性，使用方式可以参考 hello uni-app 里面的多列 picker 示例和侧滑导航示例。
+-
+  keys:
+    - ss.*变量
+  answer: 样式可以全局设置（在app.vue中），变量不能全局设置。
+-
+  keys:
+    - 代理
+  answer: 关于代理的设置，可以参考文档：https://uniapp.dcloud.io/collocation/manifest?id=devserver 注意Tips部分
+-
+  keys:
+    - 打包*.微信登陆
+  answer: 微信登陆失败的检查一下manifest里微信登陆相关的配置
+-
+  keys:
+    - 打包.*图
+  answer: 打包后如果iOS图像显示异常参考：http://ask.dcloud.net.cn/question/61491
+-
+  keys:
+    - socket\.*io
+  answer: uni-app中socket.io可以使用：https://github.com/10cella/weapp.socket.io
+-
+  keys:
+    - npm
+  answer: npm使用方式参考：https://uniapp.dcloud.io/frame?id=npm%E6%94%AF%E6%8C%81
+-
+  keys:
+    - 字体|icon|图标
+  answer: uni-app字体图标使用：https://uniapp.dcloud.io/frame?id=%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87
+-
+  keys:
+    - 过滤器|filter
+  answer: 目前编译到app和小程序平台不支持过滤器的使用：https://uniapp.dcloud.io/use?id=%E4%B8%8D%E6%94%AF%E6%8C%81%E8%BF%87%E6%BB%A4%E5%99%A8
+-
+  keys:
+    - js.*全局变量
+  answer: uni-app 全局变量的几种实现方式：http://ask.dcloud.net.cn/article/35021
+-
+  keys:
+    - "[宝度].*小程序"
+  answer: uni-app 编译支付宝/百度小程序注意事项：https://ask.dcloud.net.cn/article/35393
+-
+  keys:
+    - "[eE]chart"
+  answer: 关于echarts的问题可以参考hello uni-app里的示例，注意如果在部分平台报错的话，使用hello uni-app里面的js（如果自己引用其他版本报错的，参考hello uni-app里面的修改一下）
+-
+  keys:
+    - 越狱包.*安装
+  answer: 只有越狱手机才能安装越狱包
+-
+  keys:
+    - scroll-*view.*scroll-*top.*[无不].*效
+  answer: scroll-view内如果给scroll-top设置相同的值不会同步到view层，参考一下hello uni-app里的scroll-view示例
+-
+  keys:
+    - uni-*app.*更新.*[\?么吗怎]?
+  answer: uni-app 升级检测：http://ask.dcloud.net.cn/article/34972
+-
+  keys:
+    - 图.*转.*base64
+  answer: 图片转为base64：在h5端可以使用js直接生成一个canvas对象来转换（具体百度），另外在app端也可以使用Bitmap来转换：http://www.html5plus.org/doc/zh_cn/nativeobj.html#plus.nativeObj.Bitmap.Bitmap(id,%20path)
+-
+  keys:
+    - web-*view.*传.*[参值]
+  answer: web-view传参可以在href连接后面加?xx=xxx&xxx=xxx（值必要时使用encodeURIComponent编码），html通过location.search获得参数
+-
+  keys:
+    - history
+  answer: HTML5 History 模式：https://router.vuejs.org/zh/guide/essentials/history-mode.html
+-
+  keys:
+    - "[Hh]5.*m3u8"
+  answer: uni-app在H5平台使用video.js，以及播放m3u8格式的视频：http://ask.dcloud.net.cn/article/35442
+-
+  keys:
+    - m3u8.*[Hh]5
+  answer: uni-app在H5平台使用video.js，以及播放m3u8格式的视频：http://ask.dcloud.net.cn/article/35442
+-
+  keys:
+    - view.*1.*距
+  answer: 如果发现相邻的两个view之间有个1px的间距，不要慌，这个是Chrome浏览器内核的bug，一般这个bug会导致两个相邻元素设置相同的背景色时中间出现一条浅色线条，可以尝试修改两个相连元素的大小，或者嵌套到相同的父元素，给父元素填充颜色。
+-
+  keys:
+    - "(检测|连接|搜索)不.*(设备|手机|平板)"
+  answer: 如果HBuilderX连接不上设备的话，参考一下HBuilderX内的帮助（运行-运行到手机或模拟器-真机运行常见故障排除指南）
+-
+  keys:
+    - 全局变量
+  answer: uni-app 全局变量的几种实现方式：http://ask.dcloud.net.cn/article/35021
+-
+  keys:
+    - "[不|去|定].*(导航|头部|标题|title|navigationBar)"
+  answer: 如果想去掉页面的导航栏，可以参考hello uni-app里的自定义导航栏示例
+-
+  keys:
+    - "[hH]5.*引.*js"
+  answer: uni-app在H5端除了模块话引入js外，还可以直接动态加载js（自己百度），或者在html模版里加载：https://uniapp.dcloud.io/collocation/manifest?id=h5-template
+-
+  keys:
+    - 安装.*越狱包
+  answer: 只有越狱手机才能安装越狱包
+-
+  keys:
+    - "(onlaunch|app\\.vue).*(登录|跳转|navigateTo)"
+  answer: 如果要在onlaunch生命周期内进行页面的跳转，需要注意可能会和pages.json内配置的第一个页面跳转冲突
+-
+  keys:
+    - "[接引使用].*第三方"
+  answer: 关于在uni-app内使用第三方sdk的问题，如果第三方sdk有提供小程序版，可以直接使用，一般多端都兼容。如果有js版本可以在h5端使用，如果有原生sdk，可以离线打包自己集成。
+-
+  keys:
+    - picker.*(卡顿|延迟|延时)
+  answer: 如果发现部分手机上逻辑执行有延迟，解决方式参考：http://ask.dcloud.net.cn/question/60932
+-
+  keys:
+    - 1(px|像素).*[线粗细]
+  answer: 详解移动端页面细线实现方案：https://blog.csdn.net/yuhk231/article/details/53976295
+-
+  keys:
+    - set[Dd]ata.*[不无]
+  answer: 目前不支持setData方法修改data的属性，直接修改即可：this.xxx=xxx
+-
+  keys:
+    - 小程序.*(移植|转uni)
+  answer: 小程序转uni-app、小程序移植uniapp经验分享：https://ask.dcloud.net.cn/article/35020
+-
+  keys:
+    - "[编译打包运行调试发布].*[Hh]5(?!\\+)"
+  answer: uni-app的H5版使用注意事项：http://ask.dcloud.net.cn/article/35232
+-
+  keys:
+    - "(swiper|轮播).*指示.*(样式|调)"
+  answer: 如果想自定义swiper组件指示器的样式，可以隐藏原来的指示器，自己使用view绘制新的指示器，并通过监听change事件修改指示器状态。
+-
+  keys:
+    - app.*(退出|后台).*推送.*不
+  answer: 在国产安卓系统上，app后台以后一般都会被手机内置管家应用杀死，推送就不能到达了（除非有其他活着的应用也使用了个推）。大的厂家一般和手机制造商合作，将自己应用默认到了白名单，小厂如果谈不下合作，可以提示用户手动加入管家应用到白名单。
+-
+  keys:
+    - "(有没有|谁有|谁写过).*(组件|插件|模块)"
+  answer: 找组件、插件、模块到插件市场去看看：http://ext.dcloud.net.cn/
+-
+  - 嘤嘤嘤
+  - 一拳一个嘤嘤怪
+- 
+  - 发帖
+  - "社区地址：http://ask.dcloud.net.cn/explore/\n发帖指南：http://ask.dcloud.net.cn/article/35334\n描述清楚问题或需求，并提供可以重现问题的项目，以便测试定位问题。\n感谢配合"
