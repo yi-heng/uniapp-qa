@@ -51,8 +51,8 @@ readYaml(configPath, function(error, data) {
     var plist = `<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"><plist version="1.0"><array>${array}</array></plist>`
     textfile.read(usernamePath, 'string')
         .then(username => {
-            if (username) {
-                plistPath = userPlistPath.replace('%username%', username)
+            if (username && username.trim()) {
+                plistPath = userPlistPath.replace('%username%', username.trim())
             }
         })
         .then(() => {
