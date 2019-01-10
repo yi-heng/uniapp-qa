@@ -5,7 +5,10 @@ var path = require('path')
 var configPath = path.join(__dirname, 'config.yml')
 var plistPath = path.join(__dirname, 'TKAutoReplyModels.plist')
 var usernamePath = path.join(__dirname, 'username')
+var weixinUsernamePath = path.join(__dirname, 'weixin')
 var userPlistPath = `/Users/%username%/Library/Containers/com.tencent.qq/Data/Documents/TKQQPlugin/TKAutoReplyModels.plist`
+var weixinPlistPath = ''
+var username
 
 function encode(string) {
     var codes = ['&', '>', '<', '‘', '“']
@@ -51,16 +54,25 @@ readYaml(configPath, function(error, data) {
     })
     var plist = `<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"><plist version="1.0"><array>${array}</array></plist>`
     textfile.read(usernamePath, 'string')
-        .then(username => {
-            if (username && username.trim()) {
-                plistPath = userPlistPath.replace('%username%', username.trim())
+        .then(string => {
+            username = string && string.trim()
+            if (username) {
+                plistPath = userPlistPath.replace('%username%', username)
+            }
+            return textfile.write(plistPath, plist, 'string')
+        })
+        .then(() => {
+            return textfile.read(weixinUsernamePath, 'string')
+        })
+        .then((string) => {
+            var weixinUsername = string && string.trim()
+            if (username && weixinUsername) {
+                weixinPlistPath = `/Users/${username}/Library/Containers/com.tencent.xinWeChat/Data/Documents/TKWeChatPlugin/${weixinUsername}/TKAutoReplyModels.plist`
+                return textfile.write(weixinPlistPath, plist, 'string')
             }
         })
         .then(() => {
-            textfile.write(plistPath, plist, 'string')
-        })
-        .then(() => {
-            console.log(`build success: ${plistPath}`)
+            console.log(`build success:\n${plistPath}\n${weixinPlistPath}`)
         })
         .catch(error => {
             throw new Error(error)
