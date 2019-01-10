@@ -119,9 +119,11 @@
     - 怎么去掉导航栏？
     - 导航栏怎么去掉？
     - 标题能去掉吗？
+    - 我单独把顶栏去掉
+    - 取消导航栏
   keys:
-    - "[不|去|定].*(导航|头部|标题|title|navigationBar)"
-    - "(导航|头部|标题|title|navigationBar).*[不|去|定]"
+    - "[不|去|定|消].*(导航|头部|标题|title|navigationBar|顶栏)"
+    - "(导航|头部|标题|title|navigationBar|顶栏).*[不|去|定|消]"
   answer: "去掉页面的导航栏方法：\n所有页面都去掉：在manifest里配置navigationStyle为custom（https://uniapp.dcloud.io/collocation/pages?id=globalstyle）\n单页面去掉：新版小程序支持page->style配置navigationStyle为custom（https://uniapp.dcloud.io/collocation/pages?id=style），app和h5配置titleNView为false（https://uniapp.dcloud.io/collocation/pages?id=app-plus）\n另外可以参考hello uni-app里的自定义导航栏示例"
 -
   keys:
