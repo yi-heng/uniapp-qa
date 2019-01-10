@@ -44,6 +44,7 @@ readYaml(configPath, function(error, data) {
                 }
             })
         }
+        answer += '\n--来自 uni-app 小助手'
         keys.forEach(key => {
             array += `<dict><key>delayTime</key><integer>0</integer><key>enable</key><true/><key>enableDelay</key><false/><key>enableGroupReply</key><true/><key>enableRegex</key><true/><key>enableSingleReply</key><true/><key>keyword</key><string>${encode(key)}</string><key>replyContent</key><string>${encode(answer)}</string></dict>`
         })
