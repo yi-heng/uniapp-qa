@@ -1,16 +1,20 @@
 {
-  "name": "uniapp-qa",
-  "version": "1.0.0",
-  "description": "",
-  "main": "build.js",
-  "scripts": {
-    "build": "node build"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "read-yaml": "^1.1.0",
-    "textfile": "^1.2.0"
-  }
+    "name": "uniapp-qa",
+    "version": "1.0.0",
+    "description": "",
+    "main": "build.js",
+    "scripts": {
+        "build": "node build",
+        "kill": "node kill",
+        "open": "open /Applications/QQ.app&&open /Applications/WeChat.app",
+        "restart":"npm run kill&&npm run build&&npm run open"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "ps-list": "^6.0.0",
+        "read-yaml": "^1.1.0",
+        "textfile": "^1.2.0"
+    }
 }
