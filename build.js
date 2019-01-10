@@ -9,7 +9,7 @@ var weixinUsernamePath = path.join(__dirname, 'weixin')
 var userPlistPath = `/Users/%username%/Library/Containers/com.tencent.qq/Data/Documents/TKQQPlugin/TKAutoReplyModels.plist`
 var weixinPlistPath = ''
 var username
-var DELAY_TIME = 10
+var DELAY_TIME = 30
 
 function encode(string) {
     var codes = ['&', '>', '<', '‘', '“']
