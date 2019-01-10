@@ -160,8 +160,10 @@
     - "[编译打包运行调试发布].*[Hh]5(?!\\+)"
   answer: uni-app的H5版使用注意事项：http://ask.dcloud.net.cn/article/35232
 -
+  questions:
+    - 请问banner上的圆点的大小怎么修改呀
   keys:
-    - "(swiper|轮播).*指示.*(样式|调)"
+    - "(swiper|banner|轮播).*(指示|点).*(样式|调|修改)"
   answer: 如果想自定义swiper组件指示器的样式，可以隐藏原来的指示器，自己使用view绘制新的指示器，并通过监听change事件修改指示器状态。
 -
   keys:
