@@ -197,8 +197,15 @@
     - app版本号怎么拿到？
     - 就是不能获取应用版本号吗
   keys:
-    - "怎.*[获取拿].*(app|应用).*(version|版本)"
+    - "(怎|如何|能否).*[获取拿].*(app|应用).*(version|版本)"
     - "[获取拿].*(app|应用).*(version|版本).*(么|吗|？|\\?)"
-    - "(app|应用).*(version|版本).*怎.*[获取拿]"
+    - "(app|应用).*(version|版本).*(怎|如何|能否).*[获取拿]"
     - "(app|应用).*(version|版本).*[获取拿](么|吗|？|\\?)"
   answer: 获取5+APP的版本号方式：plus.runtime.getProperty（http://www.html5plus.org/doc/zh_cn/runtime.html#plus.runtime.getProperty）。另外真机调试获取到的版本号是固定的（基座版本号）。
+- questions:
+    - 请问页面的滚动条如何隐藏
+    - 怎样去掉app的滚动条
+  keys:
+    - (页面|app|应用).*滚动条.*(如何|怎).*(隐藏|去|除)
+    - (如何|怎).*(隐藏|去|除).*(页面|app|应用).*滚动条
+  answer: 5+APP端可以隐藏整页滚动的滚动条：在 pages.json 内配置页面的 style->app-plus->scrollIndicator 为 "none"
