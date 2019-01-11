@@ -13,10 +13,6 @@
   answer: UNI-APP 开发微信公众号（H5）JS-SDK 的使用方式：http://ask.dcloud.net.cn/article/35380
 -
   keys:
-    - "[Hh]5(?!\\+).*[编译打包运行调试发布]"
-  answer: uni-app的H5版使用注意事项：http://ask.dcloud.net.cn/article/35232
--
-  keys:
     - 微信.*支付.*错*败*
   answer: 安卓微信支付-100 （-1）错误排除指导：http://ask.dcloud.net.cn/article/34997
 -
