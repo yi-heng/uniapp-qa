@@ -209,3 +209,12 @@
     - (页面|app|应用).*滚动条.*(如何|怎).*(隐藏|去|除)
     - (如何|怎).*(隐藏|去|除).*(页面|app|应用).*滚动条
   answer: 5+APP端可以隐藏整页滚动的滚动条：在 pages.json 内配置页面的 style->app-plus->scrollIndicator 为 "none"
+- questions:
+    - 怎么禁止软键盘把底部导航顶起来啊
+    - input输入时弹起底部tab被软键盘顶上去  怎么解决啊
+  keys:
+    - 禁止.*键盘.*(tab|导航).*顶
+    - 键盘.*(tab|导航).*顶.*怎么
+    - input.*(tab|导航).*顶.*怎么
+    - 禁止.*input.*(tab|导航).*顶
+  answer: 可以在输入框获取和失去焦点的时候使用uni.hideTabBar（https://uniapp.dcloud.io/api/ui/tabbar?id=hidetabbar）、uni.showTabBar（https://uniapp.dcloud.io/api/ui/tabbar?id=showtabbar）控制 TabBar 的显示状态。
