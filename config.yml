@@ -53,7 +53,7 @@
 -
   keys:
     - 过滤器|filter
-  answer: 目前编译到app和小程序平台不支持过滤器的使用：https://uniapp.dcloud.io/use?id=%E4%B8%8D%E6%94%AF%E6%8C%81%E8%BF%87%E6%BB%A4%E5%99%A8
+  answer: 目前编译到app和小程序平台不支持过滤器的使用：https://uniapp.dcloud.io/use?id=%E4%B8%8D%E6%94%AF%E6%8C%81%E8%BF%87%E6%BB%A4%E5%99%A8，可以使用计算属性（computed）提前计算好（如果是数组类型，就提前计算整个数组），来代替过滤器
 -
   keys:
     - js.*全局变量
