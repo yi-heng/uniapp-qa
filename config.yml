@@ -183,3 +183,12 @@
 - 
   - 发帖
   - "社区地址：http://ask.dcloud.net.cn/explore/\n发帖指南：http://ask.dcloud.net.cn/article/35334\n描述清楚问题或需求，并提供可以重现问题的项目。\n方便测试定位问题，感谢配合。"
+- 
+  questions:
+    - 请问下 uni-app 开发出来的app 能正常上线么
+    - 这里面有人用uni-app打包ios上架成功过的吗
+    - uni-app 用这个可以上架到appstore 吗
+  keys:
+    - "(开发|打包).*(上架|上线).*(么|吗|？|\\?)"
+    - "(上架|上线).*(商店|appstore).*(么|吗|？|\\?)"
+  answer: 使用 uni-app 开发出来的应用上架安卓商店和苹果商店都没有问题，需要注意的就是自己应用的质量，以及符合应用商店的规定。
