@@ -236,4 +236,9 @@
     - "([Hh]5(?!\\+)|[gG]oogle|[cC]hrome).*(不|无法).*(定位|[lL]ocation)"
     - "([Hh]5(?!\\+)|[gG]oogle|[cC]hrome).*(定位|[lL]ocation).*(失败|错)"
   answer: "H5端获取定位信息，需要部署在 https 服务上，本地预览（localhost）仍然可以使用 http 协议。\n无 GPS 模块的 PC 设备使用 Chrome 浏览器的时候，位置信息是连接谷歌服务器获取的，国内用户可能获取位置信息失败。"
-  
+-
+  questions:
+    - H5title怎么修改
+  keys: 
+    - "[Hh]5(?!\\+).*title.*[改配]"
+  answer: "H5端title配置方式：https://uniapp.dcloud.io/collocation/manifest?id=h5\n动态修改title：document.title = '标题文字'（跨端兼容：https://uniapp.dcloud.io/platform），另外可以利用 mixin 统一修改"
