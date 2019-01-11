@@ -91,12 +91,11 @@
     - history
   answer: HTML5 History 模式：https://router.vuejs.org/zh/guide/essentials/history-mode.html
 -
+  questions:
+    - h5端怎么播放m3u8
   keys:
-    - "[Hh]5.*m3u8"
-  answer: uni-app在H5平台使用video.js，以及播放m3u8格式的视频：http://ask.dcloud.net.cn/article/35442
--
-  keys:
-    - m3u8.*[Hh]5
+    - "[Hh]5(?!\\+).*m3u8"
+    - m3u8.*[Hh]5(?!\\+)
   answer: uni-app在H5平台使用video.js，以及播放m3u8格式的视频：http://ask.dcloud.net.cn/article/35442
 -
   keys:
@@ -228,3 +227,13 @@
   keys:
     - (上线|上架|已完成|开源).*(案例|示例)
   answer: uni-app案例：https://uniapp.dcloud.io/case、https://uniapp.dcloud.io/casecode
+- 
+  questions:
+    - 在H5 中 用google 浏览器 获取不到定位信息
+    - h5端getLocation报错
+    - chrome浏览器无法定位
+  keys:
+    - "([Hh]5(?!\\+)|[gG]oogle|[cC]hrome).*(不|无法).*(定位|[lL]ocation)"
+    - "([Hh]5(?!\\+)|[gG]oogle|[cC]hrome).*(定位|[lL]ocation).*(失败|错)"
+  answer: "H5端获取定位信息，需要部署在 https 服务上，本地预览（localhost）仍然可以使用 http 协议。\n无 GPS 模块的 PC 设备使用 Chrome 浏览器的时候，位置信息是连接谷歌服务器获取的，国内用户可能获取位置信息失败。"
+  
