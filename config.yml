@@ -192,3 +192,13 @@
     - "(开发|打包).*(上架|上线).*(么|吗|？|\\?)"
     - "(上架|上线).*(商店|appstore).*(么|吗|？|\\?)"
   answer: 使用 uni-app 开发出来的应用上架安卓商店和苹果商店都没有问题，需要注意的就是自己应用的质量，以及符合应用商店的规定。
+- questions:
+    - 怎样获取应用的版本号？
+    - app版本号怎么拿到？
+    - 就是不能获取应用版本号吗
+  keys:
+    - "怎.*[获取拿].*(app|应用).*(version|版本)"
+    - "[获取拿].*(app|应用).*(version|版本).*(么|吗|？|\\?)"
+    - "(app|应用).*(version|版本).*怎.*[获取拿]"
+    - "(app|应用).*(version|版本).*[获取拿](么|吗|？|\\?)"
+  answer: 获取5+APP的版本号方式：plus.runtime.getProperty（http://www.html5plus.org/doc/zh_cn/runtime.html#plus.runtime.getProperty）。另外真机调试获取到的版本号是固定的（基座版本号）。
