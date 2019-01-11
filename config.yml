@@ -158,8 +158,14 @@
     - 小程序.*(移植|转uni)
   answer: 小程序转uni-app、小程序移植uniapp经验分享：https://ask.dcloud.net.cn/article/35020
 -
+  questions:
+    - 编译好的H5页面怎么打不开
+    - mpvue小程序项目转uniapp项目编译成h5网页项目出错
+    - 请问一下发行的h5然后报这个错。是什么意思？
+    - h5打包后，tomcat跑不起来，谁遇到过啊？
   keys:
-    - "[编译打包运行调试发布].*[Hh]5(?!\\+)"
+    - "(编译|打包|运行|调试|发布|发行).*[Hh]5(?!\\+).*(不|问题|错)"
+    - "[Hh]5(?!\\+).*(编译|打包|运行|调试|发布|发行).*(不|问题|错)"
   answer: uni-app的H5版使用注意事项：http://ask.dcloud.net.cn/article/35232
 -
   questions:
