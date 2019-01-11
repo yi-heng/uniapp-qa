@@ -242,3 +242,11 @@
   keys: 
     - "[Hh]5(?!\\+).*title.*[改配]"
   answer: "H5端title配置方式：https://uniapp.dcloud.io/collocation/manifest?id=h5\n动态修改title：document.title = '标题文字'（跨端兼容：https://uniapp.dcloud.io/platform），另外可以利用 mixin 统一修改"
+-
+  questions:
+    - uni-app怎么获取元素标签的高度
+    - uniapp 如何获取DOM元素与顶部的高度呢
+    - 如何获取某个组件渲染后的高度
+  keys:
+    - "[获取].*(元素|标签|view|组件).*(高度|大小|位置)"
+  answer: 获取组件渲染的大小和位置信息可以使用节点信息API（https://uniapp.dcloud.io/api/ui/nodes-info），注意在渲染后获取。
