@@ -269,3 +269,9 @@
   keys:
     - "[获取].*(元素|标签|view|组件|节点).*(高度|大小|位置|信息)"
   answer: 获取组件渲染的大小和位置信息可以使用节点信息API（https://uniapp.dcloud.io/api/ui/nodes-info），注意在渲染后获取。
+-
+  questions:
+    - uni-app支持离线打包么
+  keys:
+    - "(离线打包)"
+  answer: "uni-app 支持离线打包，详细参考相关文档：\nhttps://ask.dcloud.net.cn/article/103\nhttps://ask.dcloud.net.cn/article/35139\nhttps://ask.dcloud.net.cn/article/35379"
