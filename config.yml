@@ -21,7 +21,7 @@
   keys:
     - "[阻禁]止.*滚动"
     - (弹框|蒙层|遮罩).*能.*动
-  answer: 如果想阻止弹出层的滚动，可以使用 catchtouchmove 属性，使用方式可以参考 hello uni-app 里面的多列 picker 示例和侧滑导航示例。
+  answer: 如果想阻止弹出层的滚动，可以在遮罩层监听touchmove事件同时阻止事件冒泡和默认行为： <view class="mask" @touchmove.stop.prevent="moveHandle"></view>
 -
   keys:
     - ss.*变量
