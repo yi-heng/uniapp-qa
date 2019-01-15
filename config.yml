@@ -36,8 +36,11 @@
     - 打包*.微信登陆
   answer: 微信登陆失败的检查一下manifest里微信登陆相关的配置
 -
+  questions:
+    - ios端云打包之后,uni.chooseImage,无法预览图片
   keys:
-    - 打包.*图
+    - 打包.*(图片|图像|预览图|image).*[不无]
+    - 打包.*[不无].*(图片|图像|预览图|image)
   answer: 打包后如果iOS图像显示异常参考：http://ask.dcloud.net.cn/question/61491
 -
   keys:
