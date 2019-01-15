@@ -1,7 +1,7 @@
 # questions：示例问题（非必选）
 # keys：匹配关键字（正则）
 # answer：参考答案
-# 常用疑问："[\\?？么吗怎呢嘛咋]"
+# 常用疑问："(怎|咋|为什么|如何)" "[\\?？么吗怎呢嘛咋啥]"
 - 
   questions:
     - 请求跨域怎么办
@@ -51,8 +51,15 @@
     - npm
   answer: npm使用方式参考：https://uniapp.dcloud.io/frame?id=npm%E6%94%AF%E6%8C%81
 -
+  questions:
+    - uni-app引入字体的css方法和H5的一样吗？
+    - 如何使用第三方字体库呢
+    - 怎么使用iconfont的图标
+    - uni-app如何使用本地 icons字体
+    - 字体库图标怎么搞
   keys:
-    - 字体|icon|图标
+    - "([引使用载].*字体|字体.*图标|阿里.*字体|阿里.*图标|iconfont|uni-?icon).*[\\?？么吗怎呢嘛咋啥]"
+    - "(怎|咋|为什么|如何).*([引使用载].*字体|字体图标|阿里.*字体|阿里.*图标|iconfont|uni-?icon)"
   answer: uni-app字体图标使用：https://uniapp.dcloud.io/frame?id=%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87
 -
   keys:
@@ -80,7 +87,7 @@
   answer: scroll-view内如果给scroll-top设置相同的值不会同步到view层，参考一下hello uni-app里的scroll-view示例
 -
   keys:
-    - "uni-*app.*更新.*[\\?？么吗怎呢嘛咋]"
+    - "uni-*app.*更新.*[\\?？么吗怎呢嘛咋啥]"
   answer: uni-app 升级检测：http://ask.dcloud.net.cn/article/34972
 -
   keys:
@@ -211,8 +218,8 @@
     - uni-app 用这个可以上架到appstore 吗
     - 纯uniapp开发的app能上苹果应用商店吗
   keys:
-    - "(开发|打包).*(上架|上线).*[\\?？么吗怎呢嘛咋]"
-    - "上.*(商店|appstore).*[\\?？么吗怎呢嘛咋]"
+    - "(开发|打包).*(上架|上线).*[\\?？么吗怎呢嘛咋啥]"
+    - "上.*(商店|appstore).*[\\?？么吗怎呢嘛咋啥]"
   answer: 使用 uni-app 开发出来的应用上架安卓商店和苹果商店都没有问题，需要注意的就是自己应用的质量，以及符合应用商店的规定。
 - 
   questions:
@@ -221,9 +228,9 @@
     - 就是不能获取应用版本号吗
   keys:
     - "(怎|如何|能否).*[获取拿].*(app|应用).*(version|版本)"
-    - "[获取拿].*(app|应用).*(version|版本).*[\\?？么吗怎呢嘛咋]"
+    - "[获取拿].*(app|应用).*(version|版本).*[\\?？么吗怎呢嘛咋啥]"
     - "(app|应用).*(version|版本).*(怎|如何|能否).*[获取拿]"
-    - "(app|应用).*(version|版本).*[获取拿].*[\\?？么吗怎呢嘛咋]"
+    - "(app|应用).*(version|版本).*[获取拿].*[\\?？么吗怎呢嘛咋啥]"
   answer: 获取5+APP的版本号方式：plus.runtime.getProperty（http://www.html5plus.org/doc/zh_cn/runtime.html#plus.runtime.getProperty）。另外真机调试获取到的版本号是固定的（基座版本号）。
 - 
   questions:
@@ -240,9 +247,9 @@
     - tab被键盘顶上去，有办法隐藏么
   keys:
     - 禁止.*键盘.*(tab|导航).*顶
-    - "键盘.*(tab|导航).*顶.*[\\?？么吗怎呢嘛咋]"
-    - "(tab|导航).*键盘.*顶.*[\\?？么吗怎呢嘛咋]"
-    - "input.*(tab|导航).*顶.*[\\?？么吗怎呢嘛咋]"
+    - "键盘.*(tab|导航).*顶.*[\\?？么吗怎呢嘛咋啥]"
+    - "(tab|导航).*键盘.*顶.*[\\?？么吗怎呢嘛咋啥]"
+    - "input.*(tab|导航).*顶.*[\\?？么吗怎呢嘛咋啥]"
     - 禁止.*input.*(tab|导航).*顶
   answer: 可以在输入框获取和失去焦点的时候使用uni.hideTabBar（https://uniapp.dcloud.io/api/ui/tabbar?id=hidetabbar）、uni.showTabBar（https://uniapp.dcloud.io/api/ui/tabbar?id=showtabbar）控制 TabBar 的显示状态。
 -
@@ -293,6 +300,6 @@
     - 怎么增加云打包次数
     - 打包次数是怎么限制的
   keys:
-    - "打包.*次数.*[\\?？么吗怎呢嘛咋]"
-    - "[怎咋].*打包.*次数"
+    - "打包.*次数.*[\\?？么吗怎呢嘛咋啥]"
+    - "(怎|咋|为什么|如何).*打包.*次数"
   answer: 为了优化打包排队情况，每日的打包次数进行了限制，具体参考打包提示。
