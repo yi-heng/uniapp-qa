@@ -244,6 +244,13 @@
   answer: 可以在输入框获取和失去焦点的时候使用uni.hideTabBar（https://uniapp.dcloud.io/api/ui/tabbar?id=hidetabbar）、uni.showTabBar（https://uniapp.dcloud.io/api/ui/tabbar?id=showtabbar）控制 TabBar 的显示状态。
 -
   questions:
+    - 遮罩层挡不住tabbar咋破
+    - 蒙层怎么挡住tabbar
+  keys:
+    - "(弹框|蒙层|遮罩).*[挡|遮].*(tab|导航)"
+  answer: 可以在显示和隐藏遮罩的时候使用uni.hideTabBar（https://uniapp.dcloud.io/api/ui/tabbar?id=hidetabbar）、uni.showTabBar（https://uniapp.dcloud.io/api/ui/tabbar?id=showtabbar）控制 TabBar 的显示状态。  
+-
+  questions:
     - 发一个已完成的案例来看看
     - 有没有开源示例
   keys:
