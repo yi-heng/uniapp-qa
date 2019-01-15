@@ -144,7 +144,7 @@
   answer: 如果要在onlaunch生命周期内进行页面的跳转，需要注意可能会和pages.json内配置的第一个页面跳转冲突
 -
   keys:
-    - "[接引使用].*第三方"
+    - "[接引使调用].*(第三方|sdk)"
   answer: 关于在uni-app内使用第三方sdk的问题，如果第三方sdk有提供小程序版，可以直接使用，一般多端都兼容。如果有js版本可以在h5端使用，如果有原生sdk，可以离线打包自己集成。
 -
   keys:
@@ -288,3 +288,11 @@
   keys:
     - "(离线打包)"
   answer: "uni-app 支持离线打包，详细参考相关文档：\nhttps://ask.dcloud.net.cn/article/103\nhttps://ask.dcloud.net.cn/article/35139\nhttps://ask.dcloud.net.cn/article/35379"
+-
+  questions:
+    - 怎么增加云打包次数
+    - 打包次数是怎么限制的
+  keys:
+    - "打包.*次数.*[\\?？么吗怎呢嘛咋]"
+    - "[怎咋].*打包.*次数"
+  answer: 为了优化打包排队情况，每日的打包次数进行了限制，具体参考打包提示。
