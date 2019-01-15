@@ -1,6 +1,7 @@
 # questions：示例问题（非必选）
 # keys：匹配关键字（正则）
 # answer：参考答案
+# 常用疑问："[\\?？么吗怎呢嘛咋]"
 - 
   questions:
     - 请求跨域怎么办
@@ -76,7 +77,7 @@
   answer: scroll-view内如果给scroll-top设置相同的值不会同步到view层，参考一下hello uni-app里的scroll-view示例
 -
   keys:
-    - uni-*app.*更新.*[\?么吗怎]?
+    - "uni-*app.*更新.*[\\?？么吗怎呢嘛咋]"
   answer: uni-app 升级检测：http://ask.dcloud.net.cn/article/34972
 -
   keys:
@@ -207,8 +208,8 @@
     - uni-app 用这个可以上架到appstore 吗
     - 纯uniapp开发的app能上苹果应用商店吗
   keys:
-    - "(开发|打包).*(上架|上线).*(么|吗|？|\\?)"
-    - "上.*(商店|appstore).*(么|吗|？|\\?)"
+    - "(开发|打包).*(上架|上线).*[\\?？么吗怎呢嘛咋]"
+    - "上.*(商店|appstore).*[\\?？么吗怎呢嘛咋]"
   answer: 使用 uni-app 开发出来的应用上架安卓商店和苹果商店都没有问题，需要注意的就是自己应用的质量，以及符合应用商店的规定。
 - 
   questions:
@@ -217,9 +218,9 @@
     - 就是不能获取应用版本号吗
   keys:
     - "(怎|如何|能否).*[获取拿].*(app|应用).*(version|版本)"
-    - "[获取拿].*(app|应用).*(version|版本).*(么|吗|？|\\?)"
+    - "[获取拿].*(app|应用).*(version|版本).*[\\?？么吗怎呢嘛咋]"
     - "(app|应用).*(version|版本).*(怎|如何|能否).*[获取拿]"
-    - "(app|应用).*(version|版本).*[获取拿](么|吗|？|\\?)"
+    - "(app|应用).*(version|版本).*[获取拿].*[\\?？么吗怎呢嘛咋]"
   answer: 获取5+APP的版本号方式：plus.runtime.getProperty（http://www.html5plus.org/doc/zh_cn/runtime.html#plus.runtime.getProperty）。另外真机调试获取到的版本号是固定的（基座版本号）。
 - 
   questions:
@@ -233,10 +234,12 @@
   questions:
     - 怎么禁止软键盘把底部导航顶起来啊
     - input输入时弹起底部tab被软键盘顶上去  怎么解决啊
+    - tab被键盘顶上去，有办法隐藏么
   keys:
     - 禁止.*键盘.*(tab|导航).*顶
-    - 键盘.*(tab|导航).*顶.*怎么
-    - input.*(tab|导航).*顶.*怎么
+    - "键盘.*(tab|导航).*顶.*[\\?？么吗怎呢嘛咋]"
+    - "(tab|导航).*键盘.*顶.*[\\?？么吗怎呢嘛咋]"
+    - "input.*(tab|导航).*顶.*[\\?？么吗怎呢嘛咋]"
     - 禁止.*input.*(tab|导航).*顶
   answer: 可以在输入框获取和失去焦点的时候使用uni.hideTabBar（https://uniapp.dcloud.io/api/ui/tabbar?id=hidetabbar）、uni.showTabBar（https://uniapp.dcloud.io/api/ui/tabbar?id=showtabbar）控制 TabBar 的显示状态。
 -
