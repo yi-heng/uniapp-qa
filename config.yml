@@ -170,7 +170,7 @@
 -
   keys:
     - "[hH]5.*引.*js"
-  answer: uni-app在H5端除了模块话引入js外，还可以直接动态加载js（自己百度），或者在html模版里加载：https://uniapp.dcloud.io/collocation/manifest?id=h5-template
+  answer: uni-app在H5端除了模块化引入js外，还可以直接动态加载js（自己百度），或者在html模版里加载：https://uniapp.dcloud.io/collocation/manifest?id=h5-template
 -
   keys:
     - "(onlaunch|app\\.vue).*(登录|跳转|navigateTo)"
