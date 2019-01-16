@@ -325,3 +325,9 @@
     - "(怎|咋|为什么|如何).*打包.*次数"
     - $打包次数
   answer: 为了优化打包排队情况，每日的打包次数进行了限制，具体参考打包提示。
+-
+  questions:
+    - 下拉刷新跟城市picker冲突怎么解决啊
+  keys:
+    - 下拉刷新.*picker.*冲突
+  answer: 可以在弹出自定义picker之前，使用uni.pageScrollTo（https://uniapp.dcloud.io/api/ui/scroll?id=pagescrollto）滚动页面，向下滚动一点。
