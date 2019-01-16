@@ -2,13 +2,14 @@
 # keys：匹配关键字（正则）
 # answer：参考答案
 # 常用疑问："(怎|咋|为什么|如何)" "[\\?？么吗怎呢嘛咋啥]"
+# 指令 _xxx
 - 
   questions:
     - 请求跨域怎么办
   keys:
     - "跨域.*[\\?？么吗怎呢嘛咋啥]"
     - "(怎|咋|为什么|如何).*跨域"
-    - $跨域
+    - _跨域
   answer: 跨域问题参考：http://ask.dcloud.net.cn/article/35267
 -
   questions:
@@ -16,14 +17,14 @@
   keys:
     - "公众号.*[\\?？么吗怎呢嘛咋啥]"
     - "[引使用载].*微信.*js"
-    - $公众号
+    - _公众号
   answer: UNI-APP 开发微信公众号（H5）JS-SDK 的使用方式：http://ask.dcloud.net.cn/article/35380
 -
   questions:
     - 安卓微信支付报错
   keys:
     - "微信.*支付.*(错|败|-1|-100)"
-    - $微信支付
+    - _微信支付
   answer: 安卓微信支付-100 （-1）错误排除指导：http://ask.dcloud.net.cn/article/34997
 -
   questions:
@@ -31,7 +32,7 @@
   keys:
     - "[阻禁]止.*滚动"
     - (弹框|蒙层|遮罩).*能.*动
-    - $遮罩
+    - _遮罩
   answer: 如果想阻止弹出层的滚动，可以在遮罩层监听touchmove事件同时阻止事件冒泡和默认行为： <view class="mask" @touchmove.stop.prevent="moveHandle"></view>
 -
   keys:
@@ -41,12 +42,12 @@
   keys:
     - "代理.*[\\?？么吗怎呢嘛咋啥]"
     - "(怎|咋|为什么|如何).*代理"
-    - $代理
+    - _代理
   answer: 关于代理的设置，可以参考文档：https://uniapp.dcloud.io/collocation/manifest?id=devserver 注意Tips部分
 -
   keys:
     - 打包*.微信登陆
-    - $微信登陆
+    - _微信登陆
   answer: 微信登陆失败的检查一下manifest里微信登陆相关的配置
 -
   questions:
@@ -63,7 +64,7 @@
   keys:
     - "npm.*[\\?？么吗怎呢嘛咋啥]"
     - "(怎|咋|为什么|如何).*npm"
-    - $npm
+    - _npm
   answer: npm使用方式参考：https://uniapp.dcloud.io/frame?id=npm%E6%94%AF%E6%8C%81
 -
   questions:
@@ -75,7 +76,7 @@
   keys:
     - "([引使用载].*字体|字体.*图标|阿里.*字体|阿里.*图标|iconfont|uni-?icon).*[\\?？么吗怎呢嘛咋啥]"
     - "(怎|咋|为什么|如何).*([引使用载].*字体|字体图标|阿里.*字体|阿里.*图标|iconfont|uni-?icon)"
-    - $字体图标
+    - _字体图标
   answer: uni-app字体图标使用：https://uniapp.dcloud.io/frame?id=%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87
 -
   keys:
@@ -84,7 +85,7 @@
 -
   keys:
     - js.*全局变量
-    - $全局变量
+    - _全局变量
   answer: uni-app 全局变量的几种实现方式：http://ask.dcloud.net.cn/article/35021
 -
   questions:
@@ -97,8 +98,8 @@
   keys:
     - "[宝度].*小程序.*(没|无|不|问题|样式)"
     - "(没|无|不|问题|样式).*[宝度].*小程序"
-    - $支付宝小程序
-    - $百度小程序
+    - _支付宝小程序
+    - _百度小程序
   answer: uni-app 编译支付宝/百度小程序注意事项：https://ask.dcloud.net.cn/article/35393
 -
   keys:
@@ -165,7 +166,7 @@
   keys:
     - "[不去定消隐藏].*(导航|头部|标题|title|navigationBar|顶栏)"
     - "(导航|头部|标题|title|navigationBar|顶栏).*[不去定消隐藏]"
-    - $导航栏
+    - _导航栏
   answer: "去掉页面的导航栏方法：\n所有页面都去掉：在manifest里配置navigationStyle为custom（https://uniapp.dcloud.io/collocation/pages?id=globalstyle）\n单页面去掉：新版小程序支持page->style配置navigationStyle为custom（https://uniapp.dcloud.io/collocation/pages?id=style），app和h5配置titleNView为false（https://uniapp.dcloud.io/collocation/pages?id=app-plus）\n另外可以参考hello uni-app里的自定义导航栏示例"
 -
   keys:
@@ -174,12 +175,12 @@
 -
   keys:
     - "(onlaunch|app\\.vue).*(登录|跳转|navigateTo)"
-    - $onlaunch
+    - _onlaunch
   answer: 如果要在onlaunch生命周期内进行页面的跳转，需要注意可能会和pages.json内配置的第一个页面跳转冲突
 -
   keys:
     - "[接引使调用].*(第三方|sdk)"
-    - $第三方
+    - _第三方
   answer: 关于在uni-app内使用第三方sdk的问题，如果第三方sdk有提供小程序版，可以直接使用，一般多端都兼容。如果有js版本可以在h5端使用，如果有原生sdk，可以离线打包自己集成。
 -
   keys:
@@ -207,7 +208,7 @@
   keys:
     - "(编译|打包|运行|调试|发布|发行|部署).*[Hh]5(?!\\+).*(不|问题|错)"
     - "[Hh]5(?!\\+).*(编译|打包|运行|调试|发布|发行|部署).*(不|问题|错)"
-    - $h5
+    - _h5
   answer: uni-app的H5版使用注意事项：http://ask.dcloud.net.cn/article/35232
 -
   questions:
@@ -216,7 +217,7 @@
   keys:
     - "(swiper|banner|轮播).*(指示|点).*(样式|调|修改|控制|重写)"
     - "(swiper|banner|轮播).*(不使用|修改|控制|重写|调).*(指示|点)"
-    - $指示器
+    - _指示器
   answer: 如果想自定义swiper组件指示器的样式，可以隐藏原来的指示器，自己使用view绘制新的指示器，并通过监听change事件修改指示器状态。
 -
   keys:
@@ -228,7 +229,7 @@
     - 谁封装的有日期时间插件？
   keys:
     - "(有没有|谁.*有|谁写过).*(组件|插件|模块|[Uu][Ii]框架)"
-    - $插件市场
+    - _插件市场
   answer: 找组件、插件、模块到插件市场去看看：http://ext.dcloud.net.cn/
 - 
   questions:
@@ -239,7 +240,7 @@
   keys:
     - "[用有].*(什么|哪个).*([Uu][Ii](框架|库)|前端[Uu][Ii])"
     - "[用有].*([Uu][Ii](框架|库)|前端[Uu][Ii]).*(什么|哪个|吗|？|\\?)"
-    - $ui
+    - _ui
   answer: 关于uni-app的ui库、ui框架：https://ask.dcloud.net.cn/article/35489
 -
   - 嘤嘤嘤
@@ -256,7 +257,7 @@
   keys:
     - "(开发|打包).*(上架|上线).*[\\?？么吗怎呢嘛咋啥]"
     - "上.*(商店|appstore).*[\\?？么吗怎呢嘛咋啥]"
-    - $上架
+    - _上架
   answer: 使用 uni-app 开发出来的应用上架安卓商店和苹果商店都没有问题，需要注意的就是自己应用的质量，以及符合应用商店的规定。
 - 
   questions:
@@ -302,7 +303,7 @@
     - 有没有开源示例
   keys:
     - (上线|上架|已完成|开源).*(案例|示例)
-    - $案例
+    - _案例
   answer: uni-app案例：https://uniapp.dcloud.io/case、https://uniapp.dcloud.io/casecode
 - 
   questions:
@@ -333,7 +334,7 @@
   keys:
     - "离线打包.*[\\?？么吗怎呢嘛咋啥]"
     - "(怎|咋|为什么|如何).*离线打包"
-    - $离线打包
+    - _离线打包
   answer: "uni-app 支持离线打包，详细参考相关文档：\nhttps://ask.dcloud.net.cn/article/103\nhttps://ask.dcloud.net.cn/article/35139\nhttps://ask.dcloud.net.cn/article/35379"
 -
   questions:
@@ -342,7 +343,7 @@
   keys:
     - "打包.*次数.*[\\?？么吗怎呢嘛咋啥]"
     - "(怎|咋|为什么|如何).*打包.*次数"
-    - $打包次数
+    - _打包次数
   answer: 为了优化打包排队情况，每日的打包次数进行了限制，具体参考打包提示。
 -
   questions:
