@@ -11,8 +11,11 @@
     - $跨域
   answer: 跨域问题参考：http://ask.dcloud.net.cn/article/35267
 -
+  questions:
+    - 在uni-app中该怎么引用微信的js文件
   keys:
     - "公众号.*[\\?？么吗怎呢嘛咋啥]"
+    - "[引使用载].*微信.*js"
     - $公众号
   answer: UNI-APP 开发微信公众号（H5）JS-SDK 的使用方式：http://ask.dcloud.net.cn/article/35380
 -
