@@ -227,10 +227,10 @@
     - 你们用什么ui框架呀
     - 有什么好用的ui框架推荐一下吗
   keys:
-    - "[用有].*(什么|哪个).*([Uu][Ii]框架|前端[Uu][Ii])"
-    - "[用有].*([Uu][Ii]框架|前端[Uu][Ii]).*(什么|哪个|吗|？|\\?)"
+    - "[用有].*(什么|哪个).*([Uu][Ii](框架|库)|前端[Uu][Ii])"
+    - "[用有].*([Uu][Ii](框架|库)|前端[Uu][Ii]).*(什么|哪个|吗|？|\\?)"
     - $ui
-  answer: UI框架可以试试 uni-ui（http://ext.dcloud.net.cn/plugin?id=55），另外找其他组件、插件、模块也可以到插件市场去看看：http://ext.dcloud.net.cn/
+  answer: 关于uni-app的ui库、ui框架：https://ask.dcloud.net.cn/article/35489
 -
   - 嘤嘤嘤
   - 一拳一个嘤嘤怪
