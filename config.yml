@@ -19,8 +19,10 @@
     - $公众号
   answer: UNI-APP 开发微信公众号（H5）JS-SDK 的使用方式：http://ask.dcloud.net.cn/article/35380
 -
+  questions:
+    - 安卓微信支付报错
   keys:
-    - 微信.*支付.*错*败*
+    - "微信.*支付.*(错|败|-1|-100)"
     - $微信支付
   answer: 安卓微信支付-100 （-1）错误排除指导：http://ask.dcloud.net.cn/article/34997
 -
