@@ -308,10 +308,11 @@
   questions:
     - 发一个已完成的案例来看看
     - 有没有开源示例
+    - github上面搜不到几个 uni app的开源项目
   keys:
-    - (上线|上架|已完成|开源).*(案例|示例)
+    - (上线|上架|已完成|开源).*(案例|示例|项目)
     - _案例
-  answer: uni-app案例：https://uniapp.dcloud.io/case、https://uniapp.dcloud.io/casecode
+  answer: uni-app案例：https://uniapp.dcloud.io/case，uni-app开源项目：https://uniapp.dcloud.io/casecode
 - 
   questions:
     - 在H5 中 用google 浏览器 获取不到定位信息
