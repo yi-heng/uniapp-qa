@@ -123,8 +123,11 @@
     - 图.*转.*base64
   answer: 图片转为base64：在h5端可以使用js直接生成一个canvas对象来转换（具体百度），另外在app端也可以使用Bitmap来转换：http://www.html5plus.org/doc/zh_cn/nativeobj.html#plus.nativeObj.Bitmap.Bitmap(id,%20path)
 -
+  questions:
+    - app如何向web页面传输数据？
+    - webview传参
   keys:
-    - web-*view.*传.*[参值]
+    - "(web-?view|web.*页).*传.*(参|值|数据)"
   answer: web-view传参可以在href连接后面加?xx=xxx&xxx=xxx（值必要时使用encodeURIComponent编码），html通过location.search获得参数
 -
   keys:
@@ -238,10 +241,12 @@
     - 你们用什么ui框架呀
     - 有什么好用的ui框架推荐一下吗
     - ui库有什么好推荐的
+    - 这个uni-app本身是不是没有ui框架
   keys:
-    - "[用有].*(什么|哪个).*([Uu][Ii](框架|库)|前端[Uu][Ii])"
-    - "[用有].*([Uu][Ii](框架|库)|前端[Uu][Ii]).*(什么|哪个|吗|？|\\?)"
-    - "([Uu][Ii](框架|库)|前端[Uu][Ii]).*[用有].*(什么|哪个|吗|？|\\?)"
+    - "[用有选].*(什么|哪个).*([Uu][Ii](框架|库)|前端[Uu][Ii])"
+    - "(是不是|有没有).*([Uu][Ii](框架|库)|前端[Uu][Ii])"
+    - "[用有选].*([Uu][Ii](框架|库)|前端[Uu][Ii]).*(什么|哪个|吗|？|\\?)"
+    - "([Uu][Ii](框架|库)|前端[Uu][Ii]).*[用有选].*(什么|哪个|吗|？|\\?)"
     - _ui
   answer: 关于uni-app的ui库、ui框架：https://ask.dcloud.net.cn/article/35489
 -
