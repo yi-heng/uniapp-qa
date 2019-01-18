@@ -361,3 +361,17 @@
   keys:
     - 下拉刷新.*picker.*冲突
   answer: 可以在弹出自定义picker之前，使用uni.pageScrollTo（https://uniapp.dcloud.io/api/ui/scroll?id=pagescrollto）滚动页面，向下滚动一点。
+-
+  questions:
+    - HBuilderX保存就刷新的功能去不掉
+  keys:
+    - 保存.*刷新.*([去关]不?掉|关闭)
+  answer: 点击菜单或者控制台右上角的停止运行即可
+-
+  quesitons:
+    - 集成极光推送需要离线打包才能生效？
+    - 极光推送怎么集成 ios的
+  keys:
+    - 极光.*推送.*[\\?？么吗怎呢嘛咋啥]
+    - (怎|咋|为什么|如何).*极光.*推送
+  answer: "极光推送可以离线打包集成\n离线打包的方式可以参考ask文档（或者回复关键词获取相关帮助：_离线打包）\n集成极光推送的方式可以参考社区的相关文章：http://ask.dcloud.net.cn/search/q-5p6B5YWJ5o6o6YCB#all"
