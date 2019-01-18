@@ -189,7 +189,7 @@
   answer: 关于在uni-app内使用第三方sdk的问题，如果第三方sdk有提供小程序版，可以直接使用，一般多端都兼容。如果有js版本可以在h5端使用，如果有原生sdk，可以离线打包自己集成。
 -
   keys:
-    - picker.*(卡顿|延迟|延时)
+    - "(picker|drawer|弹出|出现|执行).*(卡顿|延迟|延时)"
   answer: 如果发现部分手机上逻辑执行有延迟，解决方式参考：http://ask.dcloud.net.cn/question/60932
 -
   keys:
