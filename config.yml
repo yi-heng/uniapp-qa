@@ -121,7 +121,8 @@
 -
   keys:
     - 图.*转.*base64
-  answer: 图像转为base64插件：http://ext.dcloud.net.cn/plugin?id=123
+    - base64.*存
+  answer: 图像转为base64，图像base64保存为文件 可使用插件：http://ext.dcloud.net.cn/plugin?id=123
 -
   questions:
     - app如何向web页面传输数据？
