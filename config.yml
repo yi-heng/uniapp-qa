@@ -121,7 +121,7 @@
 -
   keys:
     - 图.*转.*base64
-  answer: 图片转为base64：在h5端可以使用js直接生成一个canvas对象来转换（具体百度），另外在app端也可以使用Bitmap来转换：http://www.html5plus.org/doc/zh_cn/nativeobj.html#plus.nativeObj.Bitmap.Bitmap(id,%20path)
+  answer: 图像转为base64插件：http://ext.dcloud.net.cn/plugin?id=123
 -
   questions:
     - app如何向web页面传输数据？
