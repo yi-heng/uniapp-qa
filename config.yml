@@ -187,7 +187,7 @@
   keys:
     - "(接|引|使|调|用|集成).*(第三方|sdk)"
     - _第三方
-  answer: 关于在uni-app内使用第三方sdk的问题，如果第三方sdk有提供小程序版，可以直接使用，一般多端都兼容。如果有js版本可以在h5端使用，如果有原生sdk，可以离线打包自己集成。
+  answer: 关于在uni-app内使用第三方sdk的问题，如果第三方sdk有提供小程序版，可以直接使用，一般多端都兼容。如果有js版本可以在h5端使用，如果有原生sdk，可以参考此文档集成：https://uniapp.dcloud.io/api/extend/native-plugin?id=requirenativeplugin。
 -
   keys:
     - "(picker|drawer|弹出|出现|执行).*(卡顿|延迟|延时)"
