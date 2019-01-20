@@ -392,3 +392,10 @@
     - "caniuse.*outdated"
     - _caniuse
   answer: uni-app编译器报caniuse-lite is outdated的紧急处理方案：https://ask.dcloud.net.cn/article/35518
+-
+  quesitons:
+    - 微信小程序运行，体积变大
+  keys:
+    - "小程序.*[增变]大"
+    - _小程序发布
+  answer: 关于微信小程序运行，体积变大的问题。因为运行到微信小程序进行调试，不再压缩代码。如果需要发布，请点击发行菜单。
