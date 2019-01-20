@@ -390,4 +390,5 @@
     - "Browserslist: caniuse-lite is outdated. Please run next command `npm update caniuse-lite browserslist`这是啥意思呀"
   keys:
     - caniuse-lite is outdated
+    - _caniuse
   answer: uni-app编译器报caniuse-lite is outdated的紧急处理方案：https://ask.dcloud.net.cn/article/35518
