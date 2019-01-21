@@ -416,3 +416,10 @@
 -
   - _工作
   - 开局一张图，内容全靠猜，建议大家发问题的时候说明故事的背景和内容，另外发的图我不能识别，可以复制主要内容发出来，方便我工作。
+-
+  quesitons:
+    - Cannot read property 'jWeixin' of undefined
+  keys:
+    - jWeixin.*undefined
+    - _jweixin
+  answer: H5端之前引用微信JS-SDK模块“jweixin-module”失效的，请更新此模块。（https://ask.dcloud.net.cn/article/35380）
