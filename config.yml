@@ -406,3 +406,10 @@
     - "unexpected.*token.*\\*"
     - "_\\*"
   answer: 小程序和APP端不支持选择器“*”，运行可能出现报错：unexpected token `*`，可在样式表内搜索移除相关样式解决。
+-
+  quesitons:
+    - unexpected token `;`
+  keys:
+    - "unexpected.*token.*;"
+    - "_;"
+  answer: 出现错误：unexpected token `;`，是 css 代码写了两个分号`;;`导致的，解决方案：搜索工程里的两个分号`;;`，替换为单个分号`;`
