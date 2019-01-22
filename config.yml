@@ -371,7 +371,7 @@
     - 保存.*刷新.*([去关]不?掉|关闭)
   answer: 点击菜单或者控制台右上角的停止运行即可
 -
-  quesitons:
+  questions:
     - 集成极光推送需要离线打包才能生效？
     - 极光推送怎么集成 ios的
   keys:
@@ -379,23 +379,55 @@
     - (怎|咋|为什么|如何).*极光.*推送
   answer: "极光推送可以离线打包集成\n离线打包的方式可以参考ask文档（或者回复关键词获取相关帮助：_离线打包）\n集成极光推送的方式可以参考社区的相关文章：http://ask.dcloud.net.cn/search/q-5p6B5YWJ5o6o6YCB#all"
 -
-  quesitons:
+  questions:
     - 微信开发者工具无法启动，提示安全设置
   keys:
     - 微信.*启动.*安全
     - _安全设置
   answer: 新版微信开发者工具安全设置：http://ask.dcloud.net.cn/article/35504
 -
-  quesitons:
+  questions:
     - "Browserslist: caniuse-lite is outdated. Please run next command `npm update caniuse-lite browserslist`这是啥意思呀"
   keys:
     - "caniuse.*outdated"
     - _caniuse
   answer: uni-app编译器报caniuse-lite is outdated的紧急处理方案：https://ask.dcloud.net.cn/article/35518
 -
-  quesitons:
+  questions:
     - 微信小程序运行，体积变大
+    - 新版HBuilderX 编译出来的小程序 比之前大了1M是什么操作？
+    - 项目运行在微信开发者工具上太大了，预览不了，有什么办法解决下吗
   keys:
-    - "小程序.*[增变]大"
+    - "(小程序|微信开发者).*([增变太]大|大了)"
     - _小程序发布
   answer: 关于微信小程序运行，体积变大的问题。因为运行到微信小程序进行调试，不再压缩代码。如果需要发布，请点击发行菜单。
+-
+  questions:
+    - unexpected token `*`
+  keys:
+    - "unexpected.*token.*\\*"
+    - "_\\*"
+  answer: 小程序和APP端不支持选择器“*”，运行可能出现报错：unexpected token `*`，可在样式表内搜索移除相关样式解决。
+-
+  questions:
+    - unexpected token `;`
+  keys:
+    - "unexpected.*token.*;"
+    - "_;"
+  answer: 出现错误：unexpected token `;`，是 css 代码写了两个分号`;;`导致的，解决方案：搜索工程里的两个分号`;;`，替换为单个分号`;`
+-
+  - _工作
+  - 开局一张图，内容全靠猜，建议大家发问题的时候说明故事的背景和内容，另外发的图我不能识别，可以复制主要内容发出来，方便我工作。
+-
+  questions:
+    - Cannot read property 'jWeixin' of undefined
+  keys:
+    - jWeixin.*undefined
+    - _jweixin
+  answer: H5端之前引用微信JS-SDK模块“jweixin-module”失效的，请更新此模块。（https://ask.dcloud.net.cn/article/35380）
+-
+  questions:
+  - Now you can provide attr `wx:key` for a `wx:for` to improve performance.
+  keys:
+    - wx:key.*performance
+  answer: 列表渲染（v-for）的使用：https://uniapp.dcloud.io/use?id=%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93
