@@ -171,7 +171,7 @@
     - "[不去定消隐藏].*(导航|头部|标题|title\\b|navigationBar|顶栏)"
     - "(导航|头部|标题|title\\b|navigationBar|顶栏).*[不去定消隐藏]"
     - _导航栏
-  answer: "去掉页面的导航栏方法：\n所有页面都去掉：在pages.json里配置navigationStyle为custom（https://uniapp.dcloud.io/collocation/pages?id=globalstyle）\n单页面去掉：新版小程序支持page->style配置navigationStyle为custom（https://uniapp.dcloud.io/collocation/pages?id=style），app和h5配置titleNView为false（https://uniapp.dcloud.io/collocation/pages?id=app-plus）\n另外可以参考hello uni-app里的自定义导航栏示例"
+  answer: "去掉页面的导航栏方法：\n所有页面都去掉：在pages.json里配置navigationStyle为custom（https://uniapp.dcloud.io/collocation/pages?id=globalstyle）\n单页面去掉：新版小程序支持page->style配置navigationStyle为custom（https://uniapp.dcloud.io/collocation/pages?id=style），app和h5配置titleNView为false（https://uniapp.dcloud.io/collocation/pages?id=app-plus）\n另外可以参考hello uni-app里的自定义导航栏示例（注意顶部状态栏占位）"
 -
   keys:
     - "[hH]5.*引.*js"
