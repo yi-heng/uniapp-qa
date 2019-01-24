@@ -343,6 +343,7 @@
     - 如何获取某个组件渲染后的高度
   keys:
     - "[获取].*(元素|标签|view|组件|节点).*(高度|大小|位置|信息)"
+    - _节点
   answer: 获取组件渲染的大小和位置信息可以使用节点信息API（https://uniapp.dcloud.io/api/ui/nodes-info），注意在渲染后获取。
 -
   questions:
@@ -380,6 +381,7 @@
   keys:
     - 极光.*推送.*[\\?？么吗怎呢嘛咋啥]
     - (怎|咋|为什么|如何).*极光.*推送
+    - _极光推送
   answer: "极光推送可以离线打包集成\n离线打包的方式可以参考ask文档（或者回复关键词获取相关帮助：_离线打包）\n集成极光推送的方式可以参考社区的相关文章：http://ask.dcloud.net.cn/search/q-5p6B5YWJ5o6o6YCB#all"
 -
   questions:
@@ -433,6 +435,7 @@
     - Now you can provide attr `wx:key` for a `wx:for` to improve performance.
   keys:
     - wx:key.*performance
+    - _for
   answer: 列表渲染（v-for）的使用：https://uniapp.dcloud.io/use?id=%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93
 -
   questions:
@@ -440,6 +443,7 @@
     - 小程序分包咋整
   keys:
     - ((怎|咋|为什么|如何).*小程序.*分包|小程序.*分包.*[\\?？么吗怎呢嘛咋啥])
+    - _分包
   answer: 小程序分包参考：https://uniapp.dcloud.io/collocation/pages?id=subpackages
 -
   questions:
@@ -455,4 +459,5 @@
     - 这个东西有就没有视频教程呀？
   keys:
     - ((有没有|哪|谁有).*视频.*教程|视频.*教程.*(有没有|哪|谁有)|有.*视频.*教程.*[\\?？么吗怎呢嘛咋啥])
+    - _视频教程
   answer: 视频教程：https://uniapp.dcloud.io/resource
