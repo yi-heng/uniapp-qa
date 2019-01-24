@@ -36,24 +36,16 @@ readYaml(configPath, function(error, data) {
             answer = item.pop()
             keys = item
         }
+        var key = keys.join('|')
         if (questions) {
             questions.forEach(question => {
-                var test
-                for (let index = 0; index < keys.length; index++) {
-                    if (new RegExp(keys[index]).test(question)) {
-                        test = true
-                        break
-                    }
-                }
-                if (!test) {
+                if (!new RegExp(key).test(question)) {
                     throw new Error(`question test error: ${question}`)
                 }
             })
         }
         answer += `\n${SIGNATURE}`
-        keys.forEach(key => {
-            array += `<dict><key>delayTime</key><integer>${DELAY_TIME}</integer><key>enable</key><true/><key>enableDelay</key><true/><key>enableGroupReply</key><true/><key>enableRegex</key><true/><key>enableSingleReply</key><true/><key>keyword</key><string>${encode(key)}</string><key>replyContent</key><string>${encode(answer)}</string></dict>`
-        })
+        array += `<dict><key>delayTime</key><integer>${DELAY_TIME}</integer><key>enable</key><true/><key>enableDelay</key><true/><key>enableGroupReply</key><true/><key>enableRegex</key><true/><key>enableSingleReply</key><true/><key>keyword</key><string>${encode(key)}</string><key>replyContent</key><string>${encode(answer)}</string></dict>`
     })
     console.log(`验证完毕`)
     var plist = `<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"><plist version="1.0"><array>${array}</array></plist>`
