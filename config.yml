@@ -430,7 +430,14 @@
   answer: H5端之前引用微信JS-SDK模块“jweixin-module”失效的，请更新此模块。（https://ask.dcloud.net.cn/article/35380）
 -
   questions:
-  - Now you can provide attr `wx:key` for a `wx:for` to improve performance.
+    - Now you can provide attr `wx:key` for a `wx:for` to improve performance.
   keys:
     - wx:key.*performance
   answer: 列表渲染（v-for）的使用：https://uniapp.dcloud.io/use?id=%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93
+-
+  questions:
+    - uni app 怎么控制小程序分包
+    - 小程序分包咋整
+  keys:
+    - ((怎|咋|为什么|如何).*小程序.*分包|小程序.*分包.*[\\?？么吗怎呢嘛咋啥])
+  answer: 小程序分包参考：https://uniapp.dcloud.io/collocation/pages?id=subpackages
