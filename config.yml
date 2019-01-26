@@ -352,9 +352,12 @@
   questions:
     - H5title怎么修改
     - H5 怎么动态的设置title
+    - 怎么修改网站的标题啊
   keys: 
-    - "[Hh]5(?!\\+).*title\\b.*[改配设]"
-    - "[Hh]5(?!\\+).*[改配设].*title\\b"
+    - "([Hh]5(?!\\+)|网站).*(title\\b|标题).*[改配设]"
+    - "([Hh]5(?!\\+)|网站).*[改配设].*(title\\b|标题)"
+    - "[改配设].*([Hh]5(?!\\+)|网站).*(title\\b|标题)"
+    - _title
   answer: "H5端title配置方式：https://uniapp.dcloud.io/collocation/manifest?id=h5\n动态修改title：document.title = '标题文字'（跨端兼容：https://uniapp.dcloud.io/platform），另外可以利用 mixin 统一修改"
 -
   questions:
