@@ -483,3 +483,12 @@
     - 有.*视频.*教程.*[\\?？么吗怎呢嘛咋啥]
     - _视频教程
   answer: 视频教程：https://uniapp.dcloud.io/resource
+-
+  questions:
+    - 请问uni支持选择文件上传吗，doc什么的
+    - uni支持选择文件上传吗，doc文件什么的
+    - uni-app如何选择和上传本地文件 非视频 非图片文件
+  keys:
+    - (怎|咋|为什么|如何).*(选择|上传).*(本地文件|非视频|非图|音|普通文件|doc)
+    - (选择|上传).*(本地文件|非视频|非图|音|普通文件|doc).*[\\?？么吗怎呢嘛咋啥]
+  answer: uni-app 选择和上传非图像、视频文件：https://ask.dcloud.net.cn/article/35547
