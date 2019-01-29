@@ -14,11 +14,12 @@
 -
   questions:
     - 在uni-app中该怎么引用微信的js文件
+    - 微信服务号js-sdk怎么引用啊
   keys:
-    - "公众号.*[\\?？么吗怎呢嘛咋啥哪]"
+    - "(公众号|服务号).*[\\?？么吗怎呢嘛咋啥哪]"
     - "[引使用载].*微信.*js"
     - _公众号
-  answer: UNI-APP 开发微信公众号（H5）JS-SDK 的使用方式：http://ask.dcloud.net.cn/article/35380
+  answer: UNI-APP 开发微信公众号、服务号（H5）JS-SDK 的使用方式：http://ask.dcloud.net.cn/article/35380
 -
   questions:
     - 安卓微信支付报错
