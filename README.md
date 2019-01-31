@@ -43,7 +43,7 @@ answer|String|是|参考答案
 ## 编译
 
 * 当前目录下建立 username 文件可配置当前设备用户名，配置后将直接编译至 QQPlugin-macOS 配置路径
-* 当前目录下建立 weixin 文件夹可另配置微信用户名，配置后将自动拷贝至 WeChatPlugin-MacOS 配置路径
+* 当前目录下建立 weixin 文件夹可另配置微信用户名，配置后将自动拷贝至 WeChatPlugin-MacOS 配置路径
 
 ```shell
 npm run build
