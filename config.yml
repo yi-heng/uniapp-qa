@@ -513,4 +513,4 @@
   keys:
     - "(HBuilderX|HBuilder|HBuilder X).*(更新后无法启动|无法启动|双击没有反应)"
     - HBuilderX无法启动
-  answer: HBuilderX首次下载解压后无法启动：http://ask.dcloud.net.cn/article/35583 ; 以前正常启动，后来无法启动: http://ask.dcloud.net.cn/article/35494
+  answer: "HBuilderX首次下载解压后无法启动：http://ask.dcloud.net.cn/article/35583 ; 以前正常启动，后来无法启动: http://ask.dcloud.net.cn/article/35494"
