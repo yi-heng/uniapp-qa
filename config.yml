@@ -505,3 +505,12 @@
     - (拉起|唤醒|唤起|跳转|启动).?(微信)?小程序.*(\\?|？|么|吗|怎|呢|嘛|咋|啥|哪|如何)
     - (怎|咋|为什么|如何|哪).*(拉起|唤醒|唤起|跳转|启动).?(微信)?小程序
   answer: 从App端跳转到微信小程序方式：https://www.html5plus.org/doc/zh_cn/share.html#plus.share.ShareService.launchMiniProgram
+ -
+  questions:
+    - HBuilderX无法启动
+    - HBuilderX双击没有反应
+    - HBuilderX更新后无法启动
+  keys:
+    - "(HBuilderX|HBuilder|HBuilder X).*(更新后无法启动|无法启动|双击没有反应)"
+    - HBuilderX无法启动
+  answer: HBuilderX首次下载解压后无法启动：http://ask.dcloud.net.cn/article/35583 ; 以前正常启动，后来无法启动: http://ask.dcloud.net.cn/article/35494
