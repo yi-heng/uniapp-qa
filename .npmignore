@@ -1,0 +1,8 @@
+TKAutoReplyModels.plist
+.vscode
+node_modules
+username
+weixin
+.gitignore
+build.js
+kill.js
