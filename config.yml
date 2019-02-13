@@ -520,3 +520,12 @@
     - (有没有|谁做过|谁有|怎么).*左滑.*(删除|交互|操作|按钮)
     - 左滑.*(删除|交互|操作|按钮).*(有没有|谁做过|谁有|怎么)
   answer: 列表左滑操作功能，可以利用 movable-area 组件来实现，或者直接使用 touch 事件实现，开源示例：https://github.com/zhangzibao/uni-app-slidelist
+-
+  questions:
+    - HBuilderX无法启动
+    - HBuilderX双击没有反应
+    - HBuilderX更新后无法启动
+  keys:
+    - "(HBuilderX|HBuilder|HBuilder X).*(更新后无法启动|无法启动|双击没有反应)"
+    - HBuilderX无法启动
+  answer: "HBuilderX首次下载解压后无法启动：http://ask.dcloud.net.cn/article/35583 ; 以前正常启动，后来无法启动: http://ask.dcloud.net.cn/article/35494"
