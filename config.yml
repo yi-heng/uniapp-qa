@@ -565,7 +565,7 @@
     - (怎|咋|为什么|如何|哪|有没有|有.*吗|能不能).*(indexedDB|websql|数据库|sqll?ite)
     - "(indexedDB|websql|数据库|sqll?ite).*(\\?|？|么|吗|怎|呢|嘛|咋|啥|哪|如何)"
   answer: "在 uni-app 操作本地数据库，不同端处理方式不同（https://uniapp.dcloud.io/platform）\npp端：可以使用插件方式操作 sqlite，（http://ext.dcloud.net.cn）\nH5端：可以使用 websql、indexedDB"
- -
+-
   questions:
     - sass插件安装失败
     - scss插件安装失败
