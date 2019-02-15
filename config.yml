@@ -570,7 +570,9 @@
     - sass插件安装失败
     - scss插件安装失败
     - sass插件无法安装
+    - binding.node
   keys:
-    - "(sass|scss|node-sass-china).*(无法安装|安装失败|安装不成功)"
-    - "(无法安装|安装失败|安装不成功).*(sass|scss|node-sass-china)"
+    - "(sass|scss|node-sass-china|binding.node).*(无法安装|安装失败|安装不成功|安装不上|安装不了|缺失)"
+    - "(无法安装|安装失败|安装不成功|安装不上|安装不了).*(sass|scss|node-sass-china)"
+    - "(binding.node).*(缺失)"
   answer: "sass/scss插件安装失的解决方案：http://ask.dcloud.net.cn/article/35468"
